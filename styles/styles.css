@@ -1,0 +1,36 @@
+header {
+    background-image: url('https://via.placeholder.com/1500x600');
+    background-size:cover ;
+    background-position:center ;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+/* Custom styles for navigation */
+#nav-menu {
+    transition: max-height 0.3s ease-out;
+}
+
+/* Responsive styles for navigation */
+@media (min-width: 1024px) {
+    #nav-menu {
+        display: flex;
+        max-height: none !important;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+}

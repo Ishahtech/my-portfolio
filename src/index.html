@@ -4,106 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Aishat Salawudeen - Frontend Developer</title>
     <link rel="stylesheet" href="/styles/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <link href="/styles/styles.css" rel="stylesheet">
 </head>
-<div class="container mx-auto">
 
-    <body class="">
-        <nav class="rounded-2xl border-2 border-gray-600">
-            <div class="flex flex-column items-center justify-between flex-wrap p-2.5 text-lg font-sans">
+<body>
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
                 <div>
-                    <img src="#!" alt="logo">
+                    <a href="#" class="text-xl font-bold">Aishat Salawudeen</a>
                 </div>
                 <div>
-                    <ul  class="flex flex-column justify-evenly flex-wrap gap-6 ">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+                    <!-- Responsive Navigation Toggle -->
+                    <button id="nav-toggle" class="lg:hidden focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="nav-menu" class="hidden lg:flex lg:items-center lg:justify-end">
+                    <a href="#projects" class="block lg:inline-block mt-4 lg:mt-0 mr-4">Projects</a>
+                    <a href="#about" class="block lg:inline-block mt-4 lg:mt-0 mr-4">About</a>
+                    <a href="#contact" class="block lg:inline-block mt-4 lg:mt-0">Contact</a>
                 </div>
             </div>
-        </nav>
-        <main class="mt-24">
-        <div class="flex flex-column justify-around capitalize">
-            <div class="capitalize font-mono">
-                <h1 class="text-6xl text-yellow-800 pb-8">Hi,Aishat Salawudeen here</h1>
-                <p class="text-2xl text-gray-600 mb-10">I am a creative website developer</p>
-                <button class="bg-transparent hover:bg-gray-600 text-2xl text-yellow-800 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-                    Explore
-                  </button>
-            </div>
-            <div>
-                <img class="pt--8 rounded-xl object-center md:object-scale-down w-60 h-84" src="/assets/ishah-b.png" alt="hi,I'm Aishat">
-            </div>
         </div>
- <section class="mt-32">
-    <div class="class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10" justify-center gap-4 ">
-        <div class="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] rounded overflow-hidden shadow-lg flex flex-col">
-            <img src="#" alt="an icon">
-            <h4>strong problem solving</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cumque quis maxime pariatur sit.</p>
-        </div>
-        <div class="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] w-11">
-            <img src="#" alt="an icon">
-            <h4>strong problem solving</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cumque quis maxime pariatur sit.</p>
-        </div>
-        <div class="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] w-11">
+    </nav>
 
-            <img src="#" alt="an icon">
-            <h4>strong problem solving</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cumque quis maxime pariatur sit.</p>
+    <!-- Hero Section -->
+    <header class="bg-gray-800 text-white py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl lg:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg lg:text-xl">I'm a frontend developer passionate about creating awesome web experiences.
+            </p>
         </div>
-    </div>
+    </header>
 
-   <div class="grid grid-cols-3 gap-10">
-    <div class="rounded overflow-hidden shadow-lg flex flex-col">
-        <a href="#"></a>
-                    <div class="relative"><a href="#">
-                            <img class="w-full"
-                                src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
-                                alt="Sunset in the mountains">
-                            <div
-                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                            </div>
-                        </a>
-                        <a href="#!">
-                            <div
-                                class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                                Cooking
-                            </div>
-                        </a>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">Projects</h2>
+            <!-- Project Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                        <p class="text-gray-600">Description of Project 1.</p>
+                        <a href="#" class="block mt-2 text-blue-500 hover:underline">View Details</a>
                     </div>
-                    <div class="px-6 py-4 mb-auto">
-                        <a href="#"
-                            class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Simplest
-                            Salad Recipe ever</a>
-                        <p class="text-gray-500 text-sm">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                        <p class="text-gray-600">Description of Project 2.</p>
+                        <a href="#" class="block mt-2 text-blue-500 hover:underline">View Details</a>
                     </div>
-    </div>
-   </div>
-        
-        
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-        
-        
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                        <p class="text-gray-600">Description of Project 3.</p>
+                        <a href="#" class="block mt-2 text-blue-500 hover:underline">View Details</a>
+                    </div>
+                </div>
             </div>
-        
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+        <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">About Me</h2>
+        <div class="text-center">
+            <p class="text-lg text-gray-700 mb-4">I'm a frontend developer passionate about creating awesome web experiences. With expertise in HTML, CSS, JavaScript, and various frontend frameworks, I enjoy turning ideas into interactive and visually appealing websites.</p>
+            <p class="text-lg text-gray-700 mb-4">In addition to frontend development, I'm also interested in UI/UX design and continuously strive to improve my skills in creating intuitive user interfaces.</p>
         </div>
     </div>
 </section>
 
-    </main>
-</div>
+ <!-- Contact Section -->
+ <section id="contact" class="py-16">
+    <div class="container mx-auto">
+        <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">Contact Me</h2>
+        <!-- Contact Form will go here -->
+    </div>
+</section>
 
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8 text-center">
+    <div class="container mx-auto">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+</footer>
 
-<footer></footer>
+<!-- JavaScript for responsive navigation toggle -->
+<script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+</script>
+
 </body>
-</div>
+
 
 </html>

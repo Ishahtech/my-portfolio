@@ -1,7 +1,8 @@
 header {
-    background-image: url('https://via.placeholder.com/1500x600');
-    background-size:cover ;
+    background-image: url('./../assets/5590457.jpg');
+    background-size:cover;
     background-position:center ;
+    background-repeat: no-repeat;
 }
 
 .py-20 {

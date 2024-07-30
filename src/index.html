@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishat Salawudeen - Frontend Developer</title>
     <link rel="stylesheet" href="/styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Include custom CSS -->
     <link href="/styles/styles.css" rel="stylesheet">
@@ -55,7 +56,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project Card 1 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 1 image" class="w-full h-40 object-cover">
+                    <img src="../assets/ProjectDeezer.png" alt="Project 1 image" class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Project 1</h3>
                         <p class="text-gray-600">Description of Project 1.</p>
@@ -64,7 +65,7 @@
                 </div>
                 <!-- Project Card 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400" alt="Project2-image" class="w-full h-40 object-cover">
+                    <img src="../assets/titans-ecommerce.png" alt="Project2-image" class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Project 2</h3>
                         <p class="text-gray-600">Description of Project 2.</p>
@@ -89,7 +90,7 @@
     <div class="container mx-auto">
         <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">About Me</h2>
         <div class="text-center">
-            <p class="text-lg text-gray-700 mb-4">I'm a frontend developer passionate about creating awesome web experiences. With expertise in HTML, CSS, JavaScript, and various frontend frameworks, I enjoy turning ideas into interactive and visually appealing websites.</p>
+            <p class="text-lg text-gray-700 mb-4">I'm a frontend developer passionate about creating awesome web experiences. With expertise in React,Tailwind CSS, Vanilla JavaScript, and various frontend frameworks, I enjoy turning ideas into interactive and visually appealing websites.</p>
             <p class="text-lg text-gray-700 mb-4">In addition to frontend development, I'm also interested in UI/UX design and continuously strive to improve my skills in creating intuitive user interfaces.</p>
         </div>
     </div>
@@ -98,46 +99,65 @@
  <!-- Contact Section -->
  <section id="contact" class="py-16 bg-gray-200">
     <div class="container mx-auto">
-        <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">Contact Me</h2>
+        <div class="container mx-auto">
+            <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">Contact Me</h2>
+          </div>
+          
         <!-- Contact Form -->
         <div class="max-w-md mx-auto">
-            <p class="text-lg text-gray-700 mb-4">Feel free to reach out to me using the form below or via email.</p>
+            <p class="text-lg text-gray-700 mb-4">
+                Feel free to reach out to me using the form below
+                <span class="block text-center w-full">or via email.</span>
+              </p>
+              
             <form>
                 <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                    <label for="name" class="block text-lg font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 pt-3 pl-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
                 </div>
                 <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 pt-4 pl-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
                 </div>
                 <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"></textarea>
+                    <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1  pl-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"></textarea>
                 </div>
-                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Send Message</button>
+                <button type="submit" class="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded">Send Message</button>
             </form>
         </div>
         
     </div>
 </section>
 
-<!-- Footer  Redesign footer, add necessary links-->
-<footer class="bg-gray-900 text-white py-8 text-center">
-    <div class="container mx-auto">
+<!-- Footer -->
+
+<footer class="bg-gray-900 text-white py-12  flex">
+
+    <div class="container mx-auto  justify-start items-center pl-8">
+        <p>Aishat Salawudeen</p>
+      </div>
+
+    <div class="flex space-x-6 pr-6">
+        <a href="https://facebook.com/aishatsalawudeen" target="_blank" class="text-white hover:text-gray-400">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/ishah4tech" target="_blank" class="text-white hover:text-gray-400">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aishatsalawudeen/" target="_blank" class="text-white hover:text-gray-400">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://instagram.com/_ishahb" target="_blank" class="text-white hover:text-gray-400">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="container mx-auto justify-end text-center">
         <p>&copy; 2024 Aishat Salawudeen. All rights reserved.</p>
     </div>
 </footer>
-<footer class="bg-gray-900 text-white py-8 text-center">
-    <div class="container mx-auto">
-        <p>&copy; 2024 Aishat Salawudeen. All rights reserved.</p>
-    </div>
-</footer>
-<footer class="bg-gray-900 text-white py-8 text-center">
-    <div class="container mx-auto">
-        <p>&copy; 2024 Aishat Salawudeen. All rights reserved.</p>
-    </div>
-</footer>
+
 
 
 <!-- JavaScript for responsive navigation toggle -->
